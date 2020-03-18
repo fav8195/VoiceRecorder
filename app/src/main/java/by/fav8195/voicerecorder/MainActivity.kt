@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Активизация меню переключения:
+        //передаем имя меню навигации (элемент) и основной вьюшки
+        //Имена пунктов меню должны совпадать с именями фрагментов в файле навигации!!!
         NavigationUI.setupWithNavController(bottom_navigation,
         Navigation.findNavController(this,R.id.nav_host_fragment_container))
     }
