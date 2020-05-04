@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 
 import by.fav8195.voicerecorder.R
-import by.fav8195.voicerecorder.R.layout.fragment_list_record
 
 /**
  * A simple [Fragment] subclass.
@@ -19,7 +18,7 @@ class ListRecordFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(fragment_list_record, container, false)
+        return inflater.inflate(R.layout.fragment_list_record, container, false)
     }
 
 }

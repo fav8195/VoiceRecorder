@@ -26,7 +26,7 @@ class RecordService: Service() {
 
     private var mFileName: String? = null
     private var mFilePath: String? = null
-    private var mCountRecords: Int? = null
+    //private var mCountRecords: Int? = null
 
     private var mRecorder: MediaRecorder? = null
 
@@ -49,7 +49,7 @@ class RecordService: Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        mCountRecords = intent?.extras?.get("COUNT") as Int?
+        //mCountRecords = intent?.extras?.get("COUNT") as Int?
 
         startRecording()
         return START_NOT_STICKY

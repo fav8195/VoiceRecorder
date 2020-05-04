@@ -5,6 +5,9 @@ apply plugin: 'kotlin-kapt'//room
 
 android {
     compileSdkVersion 29
+    dataBinding {
+        enabled = true
+    }
     buildToolsVersion "29.0.2"
 
     defaultConfig {
@@ -48,4 +51,7 @@ dependencies {
     //Корутины (сопрограммы)
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0"
+
+    //DataBinding
+    kapt 'com.android.databinding:compiler:3.6.0-rc01'
 }
